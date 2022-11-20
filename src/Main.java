@@ -1,15 +1,18 @@
 public class Main {
     public static void main(String[] args) {
-       var firstBoxer = 78.2;
-       var secondBoxer = 82.7;
-       var totalWeight = firstBoxer + secondBoxer;
-       System.out.println("Общий вес боксёров " + totalWeight + "кг");
+       var totalHours = 640;
+       System.out.println("Общее количество рабочих часов " + totalHours);
+       var shift = 8;
+       var numberEmployees = totalHours / shift;
+       System.out.println("Норматив смены получается " + shift);
+       System.out.println("Всего работников в компании – " + numberEmployees + " человек");
 
-       var difference = secondBoxer - firstBoxer;
-       System.out.println("Разница в весе боксёров " + difference + "кг");
+       var totalEmployees = numberEmployees + 94;
+       var rateShift = totalHours / totalEmployees;
+       var workTime = totalEmployees * shift;
+       System.out.println("Если в компании работает " + totalEmployees + " человека,то всего " + workTime + " часа работы может быть поделено между сотрудниками");
 
-       var remainderDifference = secondBoxer % firstBoxer;
-       System.out.println("Разница в весе боксёров (остаток от деления) " + remainderDifference + "кг");
+
         
 
     }
